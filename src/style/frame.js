@@ -1,6 +1,7 @@
 const angry = document.getElementById("angry");
 var scoreboard = document.getElementById('score');
 var fountain = document.getElementById('fountain');
+var audio = document.getElementById('audio');
 var game = false;
 
 function start(){
@@ -17,13 +18,14 @@ var pp = 0;
 var cc = 3;
 var counter = {};
 
+
 for (var i = 0; i < 15; i++) {
   var arr = [];
   arr[i] = document.getElementById("fountain" + i);
 }
 
 window.addEventListener("load", function () {
-  counter.end = 10;
+  counter.end = 60;
   counter.sec = document.getElementById("cd-sec");
 
   if (counter.end > 0) {
@@ -44,7 +46,7 @@ window.addEventListener("load", function () {
         document.getElementById('done').style.display = "block";
         console.log('done');
         var ia = document.getElementById('Lastscore');
-        ia.innerHTML = "score : " + score;
+        ia.innerHTML = "화나요 X " + score;
       }
     }, 1000);
   }
@@ -55,11 +57,15 @@ document.body.onkeyup = function (e) {
     var key = e.keyCode;
     if (pp == 1) {
       if (Boolean(key)) {
+        audio.play();
         plus();
+        audio.play();
       }
     }
     else if (key == 68 || key == 70 || key == 74 || key == 75) {
+      audio.play();
       plus();
+      audio.play();
     }
   }
 };
@@ -73,7 +79,7 @@ function plus() {
     }
     else {
       console.log(x);
-      tmp += 0.5;
+      tmp += 0.9;
       x = tmp;
       angry.style.width = x + "px";
       angry.style.height = x + "px";

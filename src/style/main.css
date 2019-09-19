@@ -16,13 +16,18 @@ body {
 #start{
   display: block;
   position: absolute;
-  top: 35%;
-  left: 41%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
 }
 #done{
   display: block;
   position: absolute;
+  text-align: center;
+  color: #ff0f23;
   top: 35%;
   left: 40%;
   z-index: 2;
