@@ -30,3 +30,10 @@
     margin-top: 10px;
     color: #ddd;
   }
+  .digits2{
+    font-size: 24px;
+    background: #fff;
+    color: #000;
+    padding: 20px 15px;
+    border-radius: 5px;
+  }

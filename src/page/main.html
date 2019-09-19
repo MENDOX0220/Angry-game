@@ -12,10 +12,26 @@
 </head>
 
 <body>
+        <div id="start"  onclick="start()">
+                <h1 style="font-size: 5em;">START</h1>
+        </div>
+        <div id="done">
+                <h1 style="font-size: 5em;" id="Lastscore"></h1>
+        </div>
     <section id="in" onclick="plus()">
-        <article id="palete">
+
+        <span id="palete">
+
+
+                <h1 id="egg1">시리야</h1>
+                <h1 id="egg2">불태워줘어어어엉</h1>
+                <h1 id="egg3">박제박제박제박제</h1>
+                <h1 id="egg4">시리 국정감사</h1>
+                <h1 id="egg5">앗</h1>
+                <h1 id="egg6">그치만 이렇게라도 하지 않으면 에드캔 오빠들이 날 봐주지 않는다구!</h1>
             <svg id="angry" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1500">
-                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="750" y1="1501.519" x2="750" y2="4.759" gradientTransform="matrix(1 0 0 -1 0 1499.72)">
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="750" y1="1501.519" x2="750" y2="4.759"
+                    gradientTransform="matrix(1 0 0 -1 0 1499.72)">
                     <stop offset=".098" stop-color="#f05766" />
                     <stop offset=".25" stop-color="#f3766a" />
                     <stop offset=".826" stop-color="#ffda6b" />
@@ -24,20 +40,25 @@
                 <circle class="st1" cx="416.7" cy="947" r="73.7" />
                 <circle class="st1" cx="1082.7" cy="947" r="73.7" />
                 <path class="st2" d="M205.9 805.1s120.5 93.7 423.4 93.7M1291.9 805.1s-120.5 93.7-423.4 93.7" />
-                <path class="st1" d="M987.6 1211.4c0 41.7-106.7 43.3-238.4 43.3s-238.4-1.7-238.4-43.3c0-36.8 109.9-54.6 241.5-54.6s235.3 17.7 235.3 54.6z" />
+                <path class="st1"
+                    d="M987.6 1211.4c0 41.7-106.7 43.3-238.4 43.3s-238.4-1.7-238.4-43.3c0-36.8 109.9-54.6 241.5-54.6s235.3 17.7 235.3 54.6z" />
             </svg>
-            <span class="skill1" onclick="allkey()">ANGRY!</span>
-        </article>
+        </span>
+
+        <span class="skill1" id="skillbtn" onclick="allkey()">ANGRY!</span>
+        <span class="skilldub" id="skilldubb">x 3</span>
+
         <div class="countdown">
             <div class="square">
                 <div class="digits" id="cd-sec">60</div>
                 <div class="text">SECONDS</div>
             </div>
+            <div class="square">
+                <div class="digits2" id="score">0</div>
+                <div class="text">score</div>
+            </div>
         </div>
-        <div>
 
-            <span style="height: 50px;" id="countSkill"></span>
-        </div>
         <nav class="about">
             <input type="button" value="login" class="btnType-A" />
             <input type="button" value="ranking" class="btnType-A" />
